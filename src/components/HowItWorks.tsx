@@ -43,7 +43,7 @@ export default function HowItWorks() {
   return (
     <section
       id="como-funciona"
-      className="py-24 md:py-32"
+      className="py-16 md:py-24"
       style={{ background: "var(--ancla-bg-light)" }}
       aria-labelledby="how-heading"
     >

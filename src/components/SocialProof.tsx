@@ -17,7 +17,7 @@ const STATS: Stat[] = [
 export default function SocialProof() {
   return (
     <section
-      className="py-24 md:py-32 relative overflow-hidden"
+      className="py-16 md:py-24 relative overflow-hidden"
       style={{ background: "var(--ancla-bg-brand)" }}
       aria-labelledby="proof-heading"
     >

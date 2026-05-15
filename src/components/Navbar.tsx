@@ -30,14 +30,27 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-5 md:px-10 flex items-center justify-between h-[68px]">
         <Logo size={38} />
 
-        <div className="flex items-center gap-3 md:gap-5">
-          <span
-            className="hidden md:inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.14em] uppercase"
-            style={{ color: "rgba(43,211,245,0.85)" }}
-          >
-            <Icon name="shield-check" size={12} />
-            Regulado CMF
-          </span>
+        <div className="flex items-center gap-3 md:gap-6">
+          <nav className="hidden md:flex items-center gap-5" aria-label="Navegación principal">
+            <a
+              href="#como-funciona"
+              className="text-[13px] font-medium transition-colors duration-150"
+              style={{ color: "rgba(255,255,255,0.60)" }}
+              onMouseEnter={e => (e.currentTarget.style.color = "rgba(255,255,255,0.95)")}
+              onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.60)")}
+            >
+              Cómo funciona
+            </a>
+            <a
+              href="#incentivos"
+              className="text-[13px] font-medium transition-colors duration-150"
+              style={{ color: "rgba(255,255,255,0.60)" }}
+              onMouseEnter={e => (e.currentTarget.style.color = "rgba(255,255,255,0.95)")}
+              onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.60)")}
+            >
+              Cuánto ganas
+            </a>
+          </nav>
 
           <Button href="#empezar" variant="cta" size="md" icon="arrow-right" iconPosition="right">
             Compartir link

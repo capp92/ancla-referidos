@@ -7,7 +7,7 @@ import ShareWidget from "./ShareWidget";
 export default function Hero() {
   return (
     <section
-      className="relative overflow-hidden pt-24 pb-10 md:pt-28 md:pb-14"
+      className="relative overflow-hidden pt-24 pb-6 md:pt-28 md:pb-8"
       style={{ background: "var(--ancla-bg-dark)" }}
       aria-labelledby="hero-heading"
     >
@@ -115,7 +115,7 @@ export default function Hero() {
             style={{ animationDelay: "100ms" }}
           >
             {/* Contenedor: imagen full + chat superpuesto abajo-derecha */}
-            <div className="relative" style={{ height: "520px" }}>
+            <div className="relative" style={{ height: "480px" }}>
 
               {/* Foto gift card — recortada para mostrar a la mujer */}
               <div
