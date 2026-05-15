@@ -1,5 +1,4 @@
 import Eyebrow from "./Eyebrow";
-import Icon from "./Icon";
 
 type Stat = {
   value: string;
@@ -14,7 +13,6 @@ const STATS: Stat[] = [
   { value: "48 hrs", label: "del primer contacto a la póliza activa", color: "#ca4bff" },
 ];
 
-const BANKS = ["BancoEstado", "Santander", "BCI", "Scotiabank", "BICE Vida", "Consorcio"];
 
 export default function SocialProof() {
   return (
@@ -90,32 +88,6 @@ export default function SocialProof() {
           ))}
         </div>
 
-        {/* Trust strip */}
-        <div
-          className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 py-5 px-6 rounded-[14px]"
-          style={{
-            background: "rgba(255,255,255,0.06)",
-            border: "1px solid rgba(255,255,255,0.12)",
-          }}
-        >
-          <span
-            className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] flex-shrink-0"
-            style={{ color: "rgba(255,255,255,0.55)" }}
-          >
-            <Icon name="bank" size={14} />
-            Seguros con
-          </span>
-          <div className="flex-1 flex flex-wrap gap-x-6 gap-y-2 md:justify-end">
-            {BANKS.map((bank) => (
-              <span
-                key={bank}
-                className="text-[14px] font-semibold text-white"
-              >
-                {bank}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

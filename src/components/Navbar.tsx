@@ -28,7 +28,7 @@ export default function Navbar() {
       }}
     >
       <div className="max-w-6xl mx-auto px-5 md:px-10 flex items-center justify-between h-[68px]">
-        <Logo size={28} />
+        <Logo size={38} />
 
         <div className="flex items-center gap-3 md:gap-5">
           <span

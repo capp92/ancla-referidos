@@ -15,19 +15,19 @@ const CONDITIONS: Condition[] = [
     icon: "users",
     question: "¿Quién puede participar?",
     answer:
-      "Clientes actuales de Ancla Seguros que hayan renovado su póliza. El programa se presenta al momento de la renovación anual por WhatsApp, con un link personalizado para cada cliente.",
+      "Clientes actuales de Ancla Seguros.",
   },
   {
     icon: "clock",
     question: "¿Cuándo recibo la gift card?",
     answer:
-      "Una vez que la persona que referiste firma su póliza con Ancla, te notificamos por WhatsApp y gestionamos la entrega de la gift card de Falabella. Todo el proceso del referido suele tomar 48 horas.",
+      "Una vez que la persona que referiste firma su póliza con Ancla, verificaremos la información y te notificamos por WhatsApp para gestionar la entrega de la gift card de Falabella. Todo el proceso del referido suele tomar unos 15 días hábiles desde que este firma la póliza.",
   },
   {
     icon: "whatsapp",
     question: "¿Qué tiene que hacer mi referido?",
     answer:
-      "Hacer clic en tu link, cotizar su ahorro en la calculadora, dejar sus datos y firmar la póliza con Ancla. Nosotros gestionamos todo el proceso de cambio — incluyendo el endoso con el banco.",
+      "Hacer clic en tu link, cotizar su ahorro en la calculadora, dejar sus datos y firmar la póliza con Ancla. Nosotros gestionamos todo el proceso de cambio.",
   },
   {
     icon: "credit-card",
@@ -45,7 +45,7 @@ const CONDITIONS: Condition[] = [
     icon: "award",
     question: "¿La persona que recomendé también recibe algo?",
     answer:
-      "Directamente no, pero su beneficio es real: cambia su seguro y comienza a ahorrar entre 25% y 40% al año en su prima — con la misma cobertura que tiene hoy. En promedio son $300.000 anuales.",
+      "Directamente no, pero su beneficio es real: cambia su seguro y comienza a ahorrar entre 25% y 40% al año en su prima — con la misma cobertura que tiene hoy.",
   },
   {
     icon: "shield-check",
@@ -171,27 +171,6 @@ export default function Conditions() {
           ))}
         </div>
 
-        {/* Regulatory note */}
-        <div
-          className="mt-10 flex items-start gap-3 p-5 rounded-[12px]"
-          style={{
-            background: "rgba(57,45,207,0.04)",
-            border: "1px solid rgba(57,45,207,0.10)",
-          }}
-        >
-          <div
-            className="flex-shrink-0"
-            style={{ color: "var(--ancla-brand)" }}
-          >
-            <Icon name="shield-check" size={20} />
-          </div>
-          <p
-            className="text-[13px] leading-relaxed"
-            style={{ color: "var(--ancla-text-muted-light)" }}
-          >
-            El programa opera bajo la <strong>NCG 469 de la CMF</strong>, la norma que te permite cambiar tu seguro hipotecario libremente. Ancla Seguros está registrada como corredora oficial de seguros.
-          </p>
-        </div>
       </div>
     </section>
   );
