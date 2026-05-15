@@ -7,7 +7,7 @@ import ShareWidget from "./ShareWidget";
 export default function Hero() {
   return (
     <section
-      className="relative overflow-hidden pt-24 pb-6 md:pt-28 md:pb-8"
+      className="relative overflow-hidden pt-20 pb-6 md:pt-24 md:pb-8"
       style={{ background: "var(--ancla-bg-dark)" }}
       aria-labelledby="hero-heading"
     >
@@ -53,7 +53,7 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-6xl mx-auto px-5 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-start">
 
           {/* ── Columna izquierda — Texto + widget ─────────── */}
           <div className="text-center lg:text-left animate-fade-up">

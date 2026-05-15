@@ -202,21 +202,10 @@ export default function ShareWidget() {
                 ? "1.5px solid rgba(37,211,102,0.55)"
                 : "1px solid rgba(57,45,207,0.15)",
               color: "#08071a",
-              paddingRight: supportsContacts ? "44px" : phoneValid ? "40px" : "16px",
+              paddingRight: phoneValid ? "40px" : "16px",
             }}
           />
-          {supportsContacts && (
-            <button type="button" onClick={handlePickContact}
-              title="Elegir desde mis contactos" aria-label="Elegir contacto"
-              className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 rounded-[8px] transition-colors active:scale-95"
-              style={{ background: "rgba(57,45,207,0.10)", color: "var(--ancla-brand)" }}>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
-              </svg>
-            </button>
-          )}
-          {!supportsContacts && phoneValid && (
+          {phoneValid && (
             <span className="absolute right-3.5 top-1/2 -translate-y-1/2 text-[13px] font-bold"
               style={{ color: "#25d366" }} aria-hidden="true">✓</span>
           )}
@@ -225,6 +214,26 @@ export default function ShareWidget() {
           <p className="text-[11px] mt-1.5" style={{ color: "rgba(220,60,50,0.90)" }}>
             Ingresa un número válido (8–11 dígitos)
           </p>
+        )}
+
+        {/* Botón de contactos — solo en dispositivos que lo soporten */}
+        {supportsContacts && (
+          <button
+            type="button"
+            onClick={handlePickContact}
+            className="mt-2 w-full flex items-center justify-center gap-2 h-[42px] rounded-[10px] font-semibold text-[13px] transition-all duration-150 active:scale-[0.98]"
+            style={{
+              background: "rgba(57,45,207,0.12)",
+              border: "1px solid rgba(57,45,207,0.25)",
+              color: "rgba(43,211,245,0.90)",
+            }}
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+            Elegir desde mis contactos
+          </button>
         )}
       </div>
 
