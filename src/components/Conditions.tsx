@@ -39,7 +39,7 @@ const CONDITIONS: Condition[] = [
     icon: "zap",
     question: "¿Hay un límite de referidos?",
     answer:
-      "No. Puedes referir a cuantas personas quieras y acumular gift cards sin restricción. Cada referido que contrate suma una gift card independiente a tu cuenta.Además al ser un nuevo cliente de Ancla, también podrá participar en el programa de referidos",
+      "No. Puedes referir a cuantas personas quieras y acumular gift cards sin restricción. Cada referido que contrate suma una gift card independiente a tu cuenta. Además, al ser un nuevo cliente de Ancla, también podrá participar en el programa de referidos.",
   },
   {
     icon: "award",

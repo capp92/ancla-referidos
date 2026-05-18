@@ -4,8 +4,6 @@ import HowItWorks from "@/components/HowItWorks";
 import IncentiveTable from "@/components/IncentiveTable";
 import Conditions from "@/components/Conditions";
 import FinalCTA from "@/components/FinalCTA";
-import Footer from "@/components/Footer";
-
 export default function Page() {
   return (
     <>
@@ -22,7 +20,6 @@ export default function Page() {
         {/* CTA final — dark */}
         <FinalCTA />
       </main>
-      <Footer />
     </>
   );
 }
