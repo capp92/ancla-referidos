@@ -14,7 +14,7 @@ const STEPS: Step[] = [
     icon: "whatsapp",
     title: "Comparte tu link",
     description:
-      "Después de renovar tu póliza recibes un link personalizado por WhatsApp. Reenvíaselo a cualquier persona que pague seguro hipotecario.",
+      "Después de renovar tu póliza recibes un link personalizado por WhatsApp. Reenvíaselo a cualquier persona que tenga un crédito hipotecario.",
   },
   {
     number: "02",

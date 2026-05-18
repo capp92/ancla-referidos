@@ -79,7 +79,7 @@ export default function Hero() {
                 fontSize: "clamp(15px, 1.4vw, 17px)",
               }}
             >
-              Comparte tu link con alguien que pague seguro hipotecario.
+              Comparte tu link con alguien que tenga un crédito hipotecario.
               Si contrata con Ancla, ganas hasta{" "}
               <span className="text-white font-semibold">$30.000 en gift card Falabella</span>{" "}
               — sin tope de referidos.
@@ -97,9 +97,7 @@ export default function Hero() {
             >
               {[
                 { icon: "zap", text: "Sin tope" },
-                { icon: "shield-check", text: "Regulado CMF" },
                 { icon: "users", text: "+1.000 clientes" },
-                { icon: "clock", text: "48 horas" },
               ].map(({ icon, text }) => (
                 <li key={text} className="flex items-center gap-1.5">
                   <Icon name={icon as "zap"} size={13} className="opacity-70" />

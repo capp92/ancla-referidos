@@ -21,13 +21,13 @@ const CONDITIONS: Condition[] = [
     icon: "clock",
     question: "¿Cuándo recibo la gift card?",
     answer:
-      "Una vez que la persona que referiste firma su póliza con Ancla, verificaremos la información y te notificamos por WhatsApp para gestionar la entrega de la gift card de Falabella. Todo el proceso del referido suele tomar unos 15 días hábiles desde que este firma la póliza.",
+      "Una vez que la persona paga y contrata su seguro con Ancla, te notificaremos por WhatsApp para gestionar la entrega de la gift Card de Falabella.",
   },
   {
     icon: "whatsapp",
     question: "¿Qué tiene que hacer mi referido?",
     answer:
-      "Hacer clic en tu link, cotizar su ahorro en la calculadora, dejar sus datos y firmar la póliza con Ancla. Nosotros gestionamos todo el proceso de cambio.",
+      "Hacer click en tu link, cotizar su ahorro en la calculadora, dejar sus datos y contratar su nuevo seguro con Ancla. Nosotros gestionamos todo el proceso de cambio.",
   },
   {
     icon: "credit-card",
@@ -39,7 +39,7 @@ const CONDITIONS: Condition[] = [
     icon: "zap",
     question: "¿Hay un límite de referidos?",
     answer:
-      "No. Puedes referir a cuantas personas quieras y acumular gift cards sin restricción. Cada referido que contrate suma una gift card independiente a tu cuenta.",
+      "No. Puedes referir a cuantas personas quieras y acumular gift cards sin restricción. Cada referido que contrate suma una gift card independiente a tu cuenta.Además al ser un nuevo cliente de Ancla, también podrá participar en el programa de referidos",
   },
   {
     icon: "award",

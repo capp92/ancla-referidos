@@ -51,7 +51,7 @@ export default function FinalCTA() {
           className="font-extrabold leading-[1.04] tracking-[-0.025em] text-white mt-6 mb-5"
           style={{ fontSize: "clamp(34px, 5vw, 56px)" }}
         >
-          Cada recomendación vale{" "}
+          Cada referido que “contrate” o “cierre” te llevas {" "}
           <span className="text-gradient-accent">hasta $30.000</span>
         </h2>
 
@@ -62,7 +62,7 @@ export default function FinalCTA() {
             fontSize: "clamp(16px, 1.5vw, 18px)",
           }}
         >
-          Solo comparte tu link con quien pague seguro hipotecario. Nosotros hacemos el resto — y tú acumulas gift cards sin tope.
+          Sólo comparte tu link con quién tenga un crédito hipotecario. Nosotros hacemos el resto — y tú acumulas gift cards sin tope.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center mb-10">
